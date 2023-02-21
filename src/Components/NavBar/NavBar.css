@@ -1,0 +1,30 @@
+.navBar{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+}
+.navBar.active{
+    background: #00000000;
+}
+
+label{
+    color: whitesmoke;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px;
+}
+
+button{
+    background-color: #000000;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: 2px solid white;
+    width: 70px;
+    height: 30px;
+    margin: 20px;
+    cursor: pointer;
+}

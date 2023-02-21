@@ -1,0 +1,59 @@
+button {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.moonTextDiv{
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    background: none;
+    height: 100%;
+    top: 0;
+    display: flex;
+    transition: 1s;
+    margin-left: -30%;
+    align-items: center;
+}
+
+.moonShake{
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    background: none;
+    height: 100%;
+    top: 0;
+    display: flex;
+    transition: 1s;
+    align-items: center;
+}
+
+
+.moonTextDiv.active{
+    margin-left: 5%;
+    transition: 1s;
+}
+
+.moonShake.active {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
